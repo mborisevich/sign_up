@@ -95,6 +95,7 @@ div.image-info {
     background-color: rgba(43, 38, 38, 0.267);
     text-align: center;
     overflow: hidden;
+    color: #E5E7EB;
 }
 div.column {
     padding: 20px;
@@ -118,6 +119,7 @@ form {
 input {
     width: 250px;
     height: 20px;
+    border: 1px solid #E5E7EB
 }
 label {
     display: block;
@@ -136,7 +138,8 @@ input.submit-button {
     margin: 40px;
     height: 50px;
     width: 250px;
-    background-color: lightblue;
+    background-color: #596D48;
+    color: white;
     border-width: 0px;
     border-radius: 10px;
     box-shadow: rgba(41, 60, 82, 0.158) 5px 10px 5px -5px;
