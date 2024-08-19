@@ -1,2 +1,2 @@
 # sign_up
-# TOP registration page project
+TOP registration page project
