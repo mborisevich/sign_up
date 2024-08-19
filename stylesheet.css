@@ -52,9 +52,10 @@ table {
     font-style: normal;
 
 }
+
 :root {
     font-size: 1em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:'Poppins', Verdana, Geneva, Tahoma, sans-serif;
 }
 body {
     background-color:rgb(43, 38, 38);
@@ -67,6 +68,10 @@ p, span {
 }
 p.required {
     font-size: 1rem;
+}
+header>p {
+    font-weight: 600;
+    line-height: 1.75rem
 }
 label>span {
     padding: 0px;
