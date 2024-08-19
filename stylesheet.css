@@ -44,10 +44,17 @@ table {
 
 
 /* My CSS */
+@font-face {
+    font-family:'norsebold';
+    src: url('assets/norse-bold-webfont.woff2') format('woff2'),
+         url('assets/norse-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
+}
 :root {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body {
     background-color:rgb(43, 38, 38);
@@ -58,7 +65,16 @@ p, span {
     padding: 10px 40px;
     font-size: 24px;
 }
-
+p.required {
+    font-size: 1rem;
+}
+label>span {
+    padding: 0px;
+    font-size: 1rem;
+}
+div.image-info>a {
+    color:white;
+}
 it {
     font-style: italic;
 }
@@ -70,32 +86,48 @@ div.container {
     margin: auto;
 }
 div.odin {
-    background-color: green;
+    background-color: rgb(43, 38, 38);
     flex: 1;
     position: relative;
+    background-image: url('assets/halie-west-25xggax4bSA-unsplash.jpg');
+    background-size: 800px;
+}
+div.odin-box>p.odin-title{
+    font-family: 'norsebold';
+    color: white;
+    font-size: 7rem;
+    padding: 0 10px;
+}
+div.odin-box>img {
+    height: 140px;
+    width: auto;
 }
 div.sign-up {
     background-color: whitesmoke;
     flex: 1.5 1.5;
     display: flex;
     flex-direction: column;
-    padding: 40px 0;
+    padding: 20px 0 120px;
 }
 div.odin-box {
     width: 100%;
     height: 180px;
     position: absolute;
-    background-color: rgba(43, 38, 38, 0.267);
+    background-color: rgba(0, 0, 0, 0.493);
     top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 div.image-info {
     position: absolute;
     width: 100%;
     bottom: 20px;
-    background-color: rgba(43, 38, 38, 0.267);
     text-align: center;
     overflow: hidden;
     color: #E5E7EB;
+    font-size: 0.8em;
 }
 div.column {
     padding: 20px;
@@ -111,9 +143,7 @@ header {
 }
 form {
     flex: 1;
-    display: flex;
-    gap: 3em;
-    padding: 0 20px;
+    padding: 0 0px;
 }
 
 input {
@@ -121,17 +151,43 @@ input {
     height: 20px;
     border: 1px solid #E5E7EB
 }
+
+input:invalid:focus {
+    background-color: rgba(233, 13, 13, 0.541);
+}
+input:focus {
+    outline: 1px solid rgba(23, 23, 117, 0.719);
+    -webkit-box-shadow: 4px 9px 9px 1px rgba(0,0,0,0.27); 
+    box-shadow: 4px 9px 9px 1px rgba(0,0,0,0.27);
+    background-color: white;
+}
 label {
     display: block;
     padding-top: 20px;
+}
+
+div.flex-container {
+    display: flex;
+    gap: 3em;
+    padding-left: 20px;
 }
 section.registration-form {
     padding: 20px 0;
     box-shadow: rgb(38, 57, 77) 0px 10px 20px -10px;
     background-color: white;
+
 }
 section.create {
     flex: 1;
+}
+
+section.create>p {
+    font-size: 1rem
+}
+section.create a {
+    color: #596D48;
+    text-decoration: none;
+    font-weight: bold;
 }
 input.submit-button {
     font-size: 1.2em;
